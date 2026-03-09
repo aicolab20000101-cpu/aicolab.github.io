@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* 整個頁面置中 */
+    body {
+      display: flex;
+      flex-direction: column; /* 上下排列 */
+      justify-content: center; /* 垂直置中 */
+      align-items: center;     /* 水平置中 */
+      height: 100vh;           /* 高度等於視窗 */
+      margin: 0;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f9f9f9;
+      padding: 20px; /* 手機小螢幕保留空白 */
+    }
+
+    h1 {
+      margin-bottom: 10px;
+      font-size: 2.5rem;
+    }
+
+    p {
+      margin-bottom: 20px;
+      font-size: 1.2rem;
+    }
+
+    button {
+      padding: 12px 24px;
+      font-size: 1rem;
+      margin-bottom: 20px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      background-color: #4a90e2;
+      color: white;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #357ABD;
+    }
+
+    img {
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      max-width: 80%; /* 響應式，手機會縮小 */
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    /* 響應式調整 */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+      button {
+        width: 100%;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>Hello</h1>
+  <p>Welcome to Grace website.</p>
+
+  <a href="GraceCV.pdf" target="_blank">
+    <button>Download My Resume</button>
+  </a>
+
+  <a href="https://www.amazon.com/Automatic-Hybrid-Mesh-Generation-applications/dp/3838306031" target="_blank">
+    <img src="book.jpeg" alt="Book">
+  </a>
+
+</body>
+</html>
