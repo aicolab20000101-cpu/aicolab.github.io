@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Website</title>
+  <style>
+    /* 將 body 設為 flex 容器，垂直+水平置中 */
+    body {
+      display: flex;
+      flex-direction: column; /* 讓內容上下排列 */
+      justify-content: center; /* 垂直置中 */
+      align-items: center;     /* 水平置中 */
+      height: 100vh;           /* 讓 body 高度等於視窗高度 */
+      margin: 0;               /* 移除預設 margin */
+      font-family: Arial, sans-serif;
+      text-align: center;      /* 文字置中 */
+      background-color: #f9f9f9; /* 背景色可改 */
+    }
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 20px;
+      font-size: 18px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin-bottom: 20px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      background-color: #4a90e2;
+      color: white;
+    }
+
+    img {
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>Hello</h1>
+  <p>Welcome to Grace website.</p>
+
+  <a href="GraceCV.pdf" target="_blank">
+    <button>Download My Resume</button>
+  </a>
+
+  <a href="https://www.amazon.com/Automatic-Hybrid-Mesh-Generation-applications/dp/3838306031" target="_blank">
+    <img src="book.jpeg" width="200" alt="Book">
+  </a>
+
+</body>
+</html>
